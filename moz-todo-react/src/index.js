@@ -7,6 +7,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<App />);
 root.render(
   <React.StrictMode>
-    <App />
+    <App subject="Jaime" />
   </React.StrictMode>
 );
