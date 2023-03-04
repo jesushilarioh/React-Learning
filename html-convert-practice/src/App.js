@@ -8,15 +8,16 @@ import {
   Heading4,
   Heading5
 } from './components/Headings';
-// import UnOrderedList from './components/UnorderedList';
+
+import UnorderedList from './components/UnorderedList';
 
 const title = "Changing to React Components";
 
 const heading = [
-  "Heading 1",
-  "Heading 2", 
-  "Heading 3",
-  "Heading 4"
+  "Heading 2",
+  "Heading 3", 
+  "Heading 4",
+  "Heading 5"
 ];
 const info = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis veritatis, ipsa, fugit odio voluptatum ad inventore nisi doloribus iusto nemo consequatur tempora sapiente commodi tenetur mollitia aut sed vel eos.",
@@ -34,9 +35,25 @@ function App() {
       <Paragraph paragraphValue={info[1]} />
       <Heading3 headingValue={heading[1]} />
       <Paragraph paragraphValue={info[2]} />
-      <Heading4 headingValue={heading[3]} />
-      {/* <UnOrderedList listItems={info} /> */}
-      <Heading5 headingValue={heading[4]} />
+      <Heading3 headingValue={heading[1
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ]} />
+      <UnorderedList listItems={info} />
+      <Heading4 headingValue={heading[2]} />
+      <Paragraph paragraphValue={info[3]} />
+      <Heading5 headingValue={heading[3]} />
       <Paragraph paragraphValue={info[0]}/>
     </>
   );

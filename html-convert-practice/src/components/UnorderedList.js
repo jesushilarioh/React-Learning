@@ -1,12 +1,11 @@
 
-export default function UnOrderedList(props) {
+export default function UnorderedList(props) {
+
+    const list = props.listItems;
 
     return(
         <ul>
-            {/* <li>{props.listItems[0]}</li> */}
-            {props.listItems.forEach((element) => 
-                <li>{element}</li>
-            )}
+            {list.map(item => <li>{item}</li>)}
         </ul>
     );
 }
