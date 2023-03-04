@@ -35,21 +35,7 @@ function App() {
       <Paragraph paragraphValue={info[1]} />
       <Heading3 headingValue={heading[1]} />
       <Paragraph paragraphValue={info[2]} />
-      <Heading3 headingValue={heading[1
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      ]} />
+      <Heading3 headingValue={heading[1]} />
       <UnorderedList listItems={info} />
       <Heading4 headingValue={heading[2]} />
       <Paragraph paragraphValue={info[3]} />
