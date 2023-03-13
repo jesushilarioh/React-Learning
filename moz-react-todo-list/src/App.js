@@ -1,43 +1,41 @@
 import './index.css';
 import Todo from "./components/Todo";
+import Form from './components/Form';
+import FilterButton from './components/FilterButton';
+
+/* 
+  Global function-as-a-prop to pass from child to parent. 
+  used in <Form /> componant in export default App(props) Component
+*/
+function addTask(name) {
+  alert(name);
+}
 
 function App(props) {
+
+  // map through a list of objects and 
+  // assign props and values individually
+  // to a <Todo /> component
+  const taskList = props.tasks.map((task) => (
+      <Todo
+        name={task.name}
+        completed={task.completed}
+        id={task.id}
+        key={task.id}
+      />
+    )
+  );
+
+
+
   return (
     <div className="todoapp stack-large">
       <h1>MDN React todo list</h1>
-      <form>
-        <h2 className="label-wrapper">
-          <label htmlFor="new-todo-input" className="label__lg">
-            What needs to be done?
-          </label>
-        </h2>
-        <input
-          type="text"
-          id="new-todo-input"
-          className="input input__lg"
-          name="text"
-          autoComplete="off"
-        />
-        <button type="submit" className="btn btn__primary btn__lg">
-          Add
-        </button>
-      </form>
+      <Form addTask={addTask} /> {/* Global function in App.js : addTask(parameter) */}
       <div className="filters btn-group stack-exception">
-        <button type="button" className="btn toggle-btn" aria-pressed="true">
-          <span className="visually-hidden">Show </span>
-          <span>all</span>
-          <span className="visually-hidden"> tasks</span>
-        </button>
-        <button type="button" className="btn toggle-btn" aria-pressed="false">
-          <span className="visually-hidden">Show </span>
-          <span>Active</span>
-          <span className="visually-hidden"> tasks</span>
-        </button>
-        <button type="button" className="btn toggle-btn" aria-pressed="false">
-          <span className="visually-hidden">Show </span>
-          <span>Completed</span>
-          <span className="visually-hidden"> tasks</span>
-        </button>
+        <FilterButton />
+        <FilterButton />
+        <FilterButton />
       </div>
       <h2 id="list-heading">3 tasks remaining</h2>
       <ul
@@ -45,9 +43,7 @@ function App(props) {
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
-        <Todo name="Eat" />
-        <Todo name="Sleep" />
-        <Todo name="Repeat"/>
+        {taskList}
       </ul>
     </div>
   );

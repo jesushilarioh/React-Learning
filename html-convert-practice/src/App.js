@@ -12,6 +12,7 @@ import {
 import UnorderedList from './components/UnorderedList';
 import OrderedList from './components/OrderedList';
 import Table from './components/Table';
+import Form from './components/Form';
 
 import {
   title, 
@@ -20,7 +21,11 @@ import {
   orderedListInfo
 } from './Data';
 
-function App() {
+function doStuff() {
+  alert("alert from App.js");
+}
+
+function App(props) {
   return (
     <>
       <Heading1 headingValue={title}/>
@@ -29,6 +34,10 @@ function App() {
       <Paragraph paragraphValue={info[1]} />
       <Heading3 headingValue={heading[1]} />
       <Paragraph paragraphValue={info[2]} />
+
+      <Heading3 headingValue="Here's a form: " />
+      <Form formInfo={props.formData}/>
+
       <Heading3 headingValue={heading[1]} />
       <UnorderedList listItems={info} />
       <Heading4 headingValue={heading[2]} />

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,60 +8,102 @@
     <title>Document</title>
     <style>
         table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
         }
-        
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
         }
-        
+
         tr:nth-child(even) {
-          background-color: #dddddd;
+            background-color: #dddddd;
         }
-        </style>
+
+        form {
+            border: #000 1px solid;
+            padding: 20px;
+            max-width: 400px;
+        }
+
+        label,
+        button,
+        input {
+            margin-right: 15px;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Mock Page (Convert me to React components)</h1>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis veritatis, ipsa, fugit odio voluptatum ad inventore nisi doloribus iusto nemo consequatur tempora sapiente commodi tenetur mollitia aut sed vel eos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis veritatis, ipsa, fugit odio voluptatum ad
+        inventore nisi doloribus iusto nemo consequatur tempora sapiente commodi tenetur mollitia aut sed vel eos.
     </p>
     <h2>Here's an h2</h2>
     <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia aliquam dolor voluptas delectus fugit odit maxime velit corporis, deleniti ullam repellat unde magni suscipit, sunt id quibusdam nam vitae!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia aliquam dolor voluptas delectus
+        fugit odit maxime velit corporis, deleniti ullam repellat unde magni suscipit, sunt id quibusdam nam vitae!
     </p>
     <h3>Here's an h3</h3>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ad libero odit. Asperiores, provident fuga, vero numquam harum accusamus quidem nisi quae nesciunt ut cum. Rem aliquid aperiam tempora?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ad libero odit. Asperiores, provident
+        fuga, vero numquam harum accusamus quidem nisi quae nesciunt ut cum. Rem aliquid aperiam tempora?
     </p>
+
+    <h3>Here's a form (h3)</h3>
+    <form>
+        <label for="blank-input">Enter info here: </label>
+        <input id="blank-input" type="text">
+        <button onclick="alert('Hello, there.')">Submit</button>
+    </form>
+
     <h4>Here's an h4</h4>
     <ul>
         <li>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus minima ipsa delectus animi blanditiis ad. Mollitia tenetur repellat reiciendis rerum. Explicabo sit nostrum dicta quo nisi dolor temporibus asperiores officiis!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus minima ipsa delectus animi blanditiis ad.
+            Mollitia tenetur repellat reiciendis rerum. Explicabo sit nostrum dicta quo nisi dolor temporibus asperiores
+            officiis!
         </li>
         <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, doloribus distinctio ut porro aperiam ducimus cupiditate cumque fugit mollitia temporibus amet harum dignissimos maiores provident voluptatum blanditiis nisi tempora dolorum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, doloribus distinctio ut porro aperiam
+            ducimus cupiditate cumque fugit mollitia temporibus amet harum dignissimos maiores provident voluptatum
+            blanditiis nisi tempora dolorum?
         </li>
         <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt provident obcaecati, mollitia, facere, rem natus repellendus officiis molestias assumenda nisi adipisci esse voluptatibus delectus enim facilis. Ullam, quae tempora.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt provident obcaecati, mollitia,
+            facere, rem natus repellendus officiis molestias assumenda nisi adipisci esse voluptatibus delectus enim
+            facilis. Ullam, quae tempora.
         </li>
         <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laboriosam, eius impedit eveniet maiores non recusandae aliquid! Omnis nemo unde nam laborum explicabo, laudantium ut illum placeat deserunt, aut voluptatem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laboriosam, eius impedit eveniet maiores non
+            recusandae aliquid! Omnis nemo unde nam laborum explicabo, laudantium ut illum placeat deserunt, aut
+            voluptatem?
         </li>
     </ul>
     <h5>Here's an h5</h5>
     <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus suscipit a doloribus laborum quod, facilis sapiente eius perspiciatis modi voluptatem iusto harum voluptatum blanditiis dolorum laboriosam? Eligendi perspiciatis veniam soluta?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus suscipit a doloribus laborum quod, facilis
+        sapiente eius perspiciatis modi voluptatem iusto harum voluptatum blanditiis dolorum laboriosam? Eligendi
+        perspiciatis veniam soluta?
     </p>
     <h3>Here's an ordered list: </h3>
     <ol>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed reprehenderit non a laudantium placeat, nobis ipsum saepe laboriosam, sapiente necessitatibus perspiciatis eligendi illo amet dicta magni vitae tempora doloremque odit?</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio temporibus commodi veritatis molestiae officia culpa alias dignissimos quo dolor rem incidunt, minus cupiditate nobis cum nemo fugiat pariatur, totam tempore?</li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde atque quam eum ut modi fugiat, suscipit mollitia totam, quis tempore in inventore ad. Dicta, exercitationem. Recusandae odio iusto aut nemo.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam modi corrupti cupiditate voluptate mollitia provident animi porro maiores. Distinctio libero nulla eaque alias rem? Praesentium vero ex natus officiis rerum?</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed reprehenderit non a laudantium placeat, nobis
+            ipsum saepe laboriosam, sapiente necessitatibus perspiciatis eligendi illo amet dicta magni vitae tempora
+            doloremque odit?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio temporibus commodi veritatis molestiae
+            officia culpa alias dignissimos quo dolor rem incidunt, minus cupiditate nobis cum nemo fugiat pariatur,
+            totam tempore?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde atque quam eum ut modi fugiat, suscipit
+            mollitia totam, quis tempore in inventore ad. Dicta, exercitationem. Recusandae odio iusto aut nemo.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam modi corrupti cupiditate voluptate
+            mollitia provident animi porro maiores. Distinctio libero nulla eaque alias rem? Praesentium vero ex natus
+            officiis rerum?</li>
     </ol>
     <h2>Here's a Table: </h2>
     <table>
@@ -96,4 +139,5 @@
         </tr>
     </table>
 </body>
+
 </html>

@@ -27,3 +27,12 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+form {
+  border: #000 1px solid;
+  padding: 20px;
+  max-width: 500px;
+}
+label, input, button {
+  margin-right: 20px;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Todo(props) {
     let name = props.name;
+    // console.log(props.tasks);
     return (
         /* 
             Boolean values in JSX attributes, must be enclosed in
@@ -14,11 +15,11 @@ export default function Todo(props) {
             a value of "true" because (aria-pressed) is not a true
             boolean attribute in the way (checked) is.
         */
-       
+
         <li className="todo stack-small">
             <div className="c-cb">
-                <input id="todo-0" type="checkbox" defaultChecked={true} />
-                <label className="todo-label" htmlFor="todo-0">
+                <input id={props.id} type="checkbox" defaultChecked={props.completed} />
+                <label className="todo-label" htmlFor={props.id}>
                     {name}
                 </label>
             </div>
