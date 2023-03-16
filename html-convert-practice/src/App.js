@@ -1,12 +1,16 @@
 
 import './App.css';
-import Paragraph from './components/Paragraph';
+import {
+  Paragraph, 
+  ParagraphDataFromIndexJs
+} from './components/Paragraph';
 import { 
   Heading1, 
   Heading2,
   Heading3,
   Heading4,
-  Heading5
+  Heading5,
+  HeadingDataFromIndexJs
 } from './components/Headings';
 
 import UnorderedList from './components/UnorderedList';
@@ -26,17 +30,25 @@ function doStuff() {
 }
 
 function App(props) {
+
+  let dataFromIndexJs = props.indexJsData;
+
   return (
     <>
       <Heading1 headingValue={title}/>
       <Paragraph paragraphValue={info[0]} />
-      <Heading2 headingValue={heading[0]} />
-      <Paragraph paragraphValue={info[1]} />
-      <Heading3 headingValue={heading[1]} />
-      <Paragraph paragraphValue={info[2]} />
+
+
+
+      <Heading2 headingValue={dataFromIndexJs[0].info} />
+      <Paragraph paragraphValue={dataFromIndexJs[0].paragraph} />
+
+
+      <HeadingDataFromIndexJs headingValue={dataFromIndexJs} />
+      <ParagraphDataFromIndexJs paragraphValue={dataFromIndexJs} />
 
       <Heading3 headingValue="Here's a form: " />
-      <Form formInfo={props.formData}/>
+      <Form formInfo={props.indexJsData}/>
 
       <Heading3 headingValue={heading[1]} />
       <UnorderedList listItems={info} />

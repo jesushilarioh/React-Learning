@@ -24,3 +24,9 @@ export function Heading5(props) {
         <h5>{props.headingValue}</h5>
     );
 }
+export function HeadingDataFromIndexJs(props) {
+    let dataFromIndexJs = props.headingValue;
+    return (
+        <h2>{dataFromIndexJs[2].info}</h2>
+    );
+}

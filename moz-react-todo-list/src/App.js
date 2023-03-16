@@ -26,8 +26,6 @@ function App(props) {
     )
   );
 
-
-
   return (
     <div className="todoapp stack-large">
       <h1>MDN React todo list</h1>
