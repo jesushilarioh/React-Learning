@@ -16,7 +16,10 @@ import {
 import UnorderedList from './components/UnorderedList';
 import OrderedList from './components/OrderedList';
 import Table from './components/Table';
-import Form from './components/Form';
+import {
+  Form,
+  FormOf2Inputs 
+}from './components/Form';
 
 import {
   title, 
@@ -49,6 +52,11 @@ function App(props) {
 
       <Heading3 headingValue="Here's a form: " />
       <Form formInfo={props.indexJsData}/>
+
+      <Paragraph paragraphValue={info[2]} />
+
+      <Heading3 headingValue="Here's another form: " />
+      <FormOf2Inputs formInfo={props.indexJsData} />
 
       <Heading3 headingValue={heading[1]} />
       <UnorderedList listItems={info} />
