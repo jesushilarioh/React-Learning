@@ -4,7 +4,7 @@ export function Form(props) {
     function clickEvent(e) {
         e.preventDefault();
         console.log(props.formInfo);
-        alert(props.formInfo[0].info);
+        alert(props.formInfo[0].paragraph);
     }
 
     return (

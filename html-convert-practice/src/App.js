@@ -41,11 +41,8 @@ function App(props) {
       <Heading1 headingValue={title}/>
       <Paragraph paragraphValue={info[0]} />
 
-
-
       <Heading2 headingValue={dataFromIndexJs[0].info} />
       <Paragraph paragraphValue={dataFromIndexJs[0].paragraph} />
-
 
       <HeadingDataFromIndexJs headingValue={dataFromIndexJs} />
       <ParagraphDataFromIndexJs paragraphValue={dataFromIndexJs} />
@@ -60,15 +57,21 @@ function App(props) {
 
       <Heading3 headingValue={heading[1]} />
       <UnorderedList listItems={info} />
+
       <Heading4 headingValue={heading[2]} />
       <Paragraph paragraphValue={info[3]} />
+      
       <Heading5 headingValue={heading[3]} />
       <Paragraph paragraphValue={info[0]}/>
+      
       <Heading3 headingValue="Here's a Ordered List: " />
       <OrderedList orderedListItems={orderedListInfo} />
+      
       <Heading2 headingValue="Here's a Table: " />
       <Table tableItems={orderedListInfo} />
-      <br />
+      
+      <Heading3 headingValue={heading[1]} />
+      <Paragraph paragraphValue={info[1]}/>
     </>
   );
 }
