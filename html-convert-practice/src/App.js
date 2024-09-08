@@ -29,7 +29,7 @@ import {
 } from './Data';
 
 function doStuff() {
-  alert("alert from App.js");
+  alert("alert from App.js, notice");
 }
 
 function App(props) {

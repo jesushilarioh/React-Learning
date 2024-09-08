@@ -2,7 +2,7 @@ const title = "Changing to React Components";
 
 const heading = [
   "Heading 2",
-  "Heading 3", 
+  "Heading 3",
   "Heading 4",
   "Heading 5"
 ];
@@ -14,41 +14,41 @@ const info = [
 ];
 const orderedListInfo = [
   {
-    id: "98845", 
+    id: "98845",
     name: "James",
     email: null,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   },
   {
-    id: "98846", 
-    name: "Damon", 
-    email: "damon@james.com", 
-    description: "Perferendis veritatis, ipsa, fugit odio voluptatum ad i." 
+    id: "98846",
+    name: "Damon",
+    email: "damon@james.com",
+    description: "Perferendis veritatis, ipsa, fugit odio voluptatum ad i."
   },
   {
-    id: "98847", 
+    id: "98847",
     name: "Jimmy",
     email: null,
     description: "Modi voluptatem iusto harum voluptatum blanditiis dosam?"
   },
   {
-    id: "98848", 
-    name: "Jeremiah", 
+    id: "98848",
+    name: "Jeremiah",
     email: "jeremiah@hmail.com",
     description: "Accusamus officia aliquam dolor voluptas delectus fugit!"
-},
+  },
   {
-    id: "98849", 
+    id: "98849",
     name: "Michael",
     email: null,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   },
   {
-    id: "98850", 
+    id: "98850",
     name: "Francesca",
     email: "hello@gmail.com",
     description: "Perferendis veritatis, ipsa, fugit odio voluptatum ad i."
   }
 ]
 
-export {title, heading, info, orderedListInfo};
+export { title, heading, info, orderedListInfo };
